@@ -1,6 +1,8 @@
 import React, { useState } from 'react'; 
-import myProfile from './assets/profile_images/myProfile.jpeg'
-import ProfileLoading from './components/profile.loading'
+
+import MainHeader from './components/MainHeader';
+import NavBar from './components/NavBar';
+import MyProjects from './components/MyProjects';
 import './styles/index.css'
 import './styles/desktop/desktop_landscape.css'
 import './styles/desktop/desktop_portrait.css'
@@ -15,7 +17,10 @@ function App() {
 
   return (
     <>
-      <ProfileLoading />
+      <NavBar />
+      <MainHeader />
+      <MyProjects />
+      
     </>
   )
 }
